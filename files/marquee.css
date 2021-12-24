@@ -1,0 +1,35 @@
+.covid_marquee {
+    display: inline-block;
+    
+    width: 98%;
+    padding: 14px 2px;     
+    background-color: #fcb813; 
+
+	color:#0053a0; 
+    font-weight: 700;
+    line-height: 1.4em;
+    text-align: center;
+}
+
+.covid_marquee_close {
+	width: 20px;
+	margin-top: -13px;
+	position: absolute;
+	top: 50%;
+	right: 20px;
+}
+.covid_marquee_close:hover {
+	cursor: pointer;
+}
+
+@media (max-width: 480px){
+	.covid_marquee {
+		text-align: center;
+		padding-left: 40px; 
+        padding-right: 40px;
+	}
+
+	.covid_marquee_close{
+		margin-top: -10px;
+	}
+}

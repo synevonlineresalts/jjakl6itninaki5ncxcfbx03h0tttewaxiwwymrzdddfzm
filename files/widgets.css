@@ -1,0 +1,169 @@
+.widgets
+{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 400;
+}
+
+.widget
+{
+    display: block;
+    width: 90px;
+    height: 90px;
+    background: #eaeaea;
+    border-radius: 50%;
+    margin-top: 10px;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease-in-out;
+}
+
+.widget:first-child
+{
+    margin-top: 0;
+}
+
+.widget:hover
+{
+    background-color: #bbd9ea;
+}
+
+.widget--support
+{
+    background-color: #fcb813;
+}
+
+.widget--support:hover
+{
+    background-color: #0053a0;
+}
+
+.widget--up
+{
+    width: 50px;
+    height: 50px;
+    background: #eaeaea;
+    left: 40px;
+}
+
+.widget--up:before
+{
+    bottom: 30% !important;
+}
+
+.widget:before
+{
+    content: '';
+    display: block;
+    background: no-repeat center;
+    background-size: contain;
+    margin-bottom: 2px;
+    position: absolute;
+    right: 0;
+    bottom: 50%;
+    left: 0;
+}
+
+.widget--appointment:before
+{
+    height: 28px;
+    background-image: url(/svg/icons/notebook-list-yellow.svg);
+}
+
+.widget--up:before
+{
+    height: 20px;
+    background-image: url(/svg/icons/arrow-up.svg);
+}
+
+.widget--info:before
+{
+    height: 26px;
+    background-image: url(/svg/icons/bubble-text-yellow.svg);
+}
+
+.widget__label
+{
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 1.25em;
+    text-align: center;
+    text-transform: uppercase;
+    color: #0053a0;
+    margin-top: 2px;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    left: 10px;
+}
+
+.widget--support > .widget__label
+{
+    color: #ffffff;
+}
+
+.widget--support:before
+{
+    height: 26px;
+    background-image: url(/svg/icons/bubble-chat-white.svg);
+}
+
+@media (max-width: 1200px)
+{
+    .widgets
+    {
+        bottom: 10px
+    }
+}
+
+@media (max-width: 991px)
+{
+    .widgets
+    {
+        bottom: 10px;
+        left: 10px;
+    }
+
+    .widget--support
+    {
+        display: none;
+    }
+    .widget--up
+    {        
+        left: 0;
+    }
+}
+
+.inner-video
+{
+    width: 760px;
+    height: 600px;
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+.inner-results
+{
+    width: 760px;
+    height: 1400px;
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+@media (max-width: 768px)
+{
+    .inner-video
+    {
+        width: 350px;
+        height: 280px;
+    }
+
+    .inner-results
+    {
+        /*width: 350px;*/
+    }
+}

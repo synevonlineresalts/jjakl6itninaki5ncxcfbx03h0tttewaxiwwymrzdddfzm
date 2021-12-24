@@ -1,0 +1,16 @@
+#results-spinner
+{
+    margin-top: 10%;
+    color: #fcb813;
+}
+
+#results-pdf
+{
+    width: 100%;
+    height: 100%;
+}
+
+#results-download
+{
+    float: right;
+}
